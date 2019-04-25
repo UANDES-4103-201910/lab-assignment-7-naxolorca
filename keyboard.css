@@ -1,3 +1,55 @@
 /* Define your CSS styles here */
 /* Remember to validate your CSS at https://jigsaw.w3.org/css-validator/ */
 
+* { box-sizing:border-box; }
+
+
+
+
+
+.keyboard {
+  margin:30px auto;
+  width:90%;
+  height:400px;
+  background:#020E05;
+  padding:30px 80px;
+
+}
+
+.key-row {
+  display:-webkit-flex;
+  margin:0 auto 5px;
+  line-height:50px;
+}
+
+.key, .arrowkey-container {
+   margin:0 6px 0 0; 
+  text-align:center;
+}
+
+.key { 
+  background:#003218;
+  color:#eee;
+  
+  align-items:center;
+  align-content:center;
+  height:57px;
+  
+  cursor:pointer;
+}
+
+sup, sub { outline:1px solid magenta; display:block; align-self:center; }
+
+.key:active { transform:translateY(1px); background:#333; box-shadow:0 1px 0 #000;}
+.half { flex:0.5; } /* half */
+.one { flex:1; } /* one */
+.one-one-half { flex:1.5; } /* One and one half */
+.two { flex:2; } /* two */
+.two-two-half { flex:2.5; } /* Two and two half */
+.three { flex:3; } /* three */
+.five { flex:5; }
+
+.key-row .key:last-child { margin:0; }
+
+.l { text-align:left; padding-left:12px; }
+.r { text-align:right; padding-right:12px; }
